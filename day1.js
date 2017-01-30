@@ -5,6 +5,15 @@ function whoAmI(name, age) {
 }
 
 function calcYOB(age) {
-  return 2017 - age;
+try {
+
+  if (age < 1) {
+    throw new Error("Age must be a positive value.");
+    return 2017 - age;
   }
+} catch (e) {
+  console.log('Something is wrong: ' + e.message);
+}
+}
+
 whoAmI("aaron", 39);
