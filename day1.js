@@ -1,4 +1,6 @@
-function whoAmI() {
-  console.log("my name is Dave and I'm 54 years young");
+function whoAmI(name, age) {
+  var yearOfBirth = 2017 - age;
+  console.log("my name is " + name  + " and I'm "+ age + " years young");
+  console.log("I was born in " + yearOfBirth +".");
 }
-whoAmI();
+whoAmI("aaron", 39);
